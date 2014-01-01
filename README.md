@@ -74,7 +74,7 @@ php artisan migrate
 In your new view:
 
 ```php
-<?= Form::open(['url' => action('UsersController@store'), 'method' => 'POST']) ?>
+<?= Form::open(['url' => action('UsersController@store'), 'method' => 'POST', 'files' => true]) ?>
 	<?= Form::file('avatar') ?>
     <?= Form::submit('save') ?>   
 <?= Form::close() ?>
